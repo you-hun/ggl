@@ -132,10 +132,10 @@
   <span class="btn" id="no">再来一次</span>
 
  <div class="pop pop1">
- <img src="img/pop1.png" />
+<!--  <img src="img/pop1.png" /> -->
  </div>
  <div class="pop pop2">
- <img src="img/pop2.png" id="pop2" />
+<!--  <img src="img/pop2.png" id="pop2" /> -->
  </div>
  <script>
 
@@ -320,7 +320,8 @@ function eventMove(e){
                document.getElementsByClassName("btn")[0].style.zIndex="3";
             }
          }
-$("#no").click(function() {
+    var btn = document.getElementById("no");
+    btn.addEventListener('click',function() {
     //初始化按钮
     document.getElementById("no").style.display = "none";
     document.getElementById("ok").style.display = "none";
